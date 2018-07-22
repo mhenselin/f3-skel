@@ -45,7 +45,24 @@ if (!file_exists('vendor/autoload.php')) {
 		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
 
 		$result = curl_exec($ch);
+
+		//If there was an error, throw an Exception
+		if(curl_errno($ch)){
+			throw new Exception(curl_error($ch));
+		}		
+
+ 
+		//Get the HTTP status code.
+		$statusCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+		 
+		//Close the cURL handler.
 		curl_close($ch);
+		 
+		if($statusCode == 200){
+			echo 'Downloaded!';
+		} else{
+			echo "Status Code: " . $statusCode;
+		}
 
 		fclose($fp);
 	}
@@ -64,5 +81,30 @@ if (!file_exists('vendor/autoload.php')) {
 		
 		echo "installed ...";
 	}
+}else{
+	require 'vendor/autoload.php';
 }
 
+	$myFS = new \FAL\LocalFS('./'); 
+	
+	$dirs = array(
+		'app',
+		'app/controllers',
+		'app/models',
+		'config',
+		'config/conf-available',
+		'config/conf-enabled',
+		'config/routes-available',
+		'config/routes-enabled',
+		'ui',
+		'themes'
+	);
+	
+	foreach ($dirs as $dir){
+		if (!$myFS->isDir( $dir )) { 
+			$myFS->createDir( $dir ); 
+		}
+	}
+
+	
+	
