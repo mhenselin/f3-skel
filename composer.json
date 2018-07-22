@@ -1,0 +1,23 @@
+{
+    "name": "mhenselin/f3-skel",
+    "description": "A fat-free-framework skeleton app using composer",
+    "license": "GPL-3.0",
+    "config": {
+		"vendor-dir": "lib"
+	},
+    "require": {
+        "bcosca/fatfree-core": "*",
+		    "xfra35/f3-access": "*",
+		    "ikkez/f3-events": "*",
+		    "ikkez/f3-fal": "*",
+		    "ikkez/f3-sheet": "*", 
+		    "ikkez/f3-cortex": "*", 
+		    "ikkez/f3-schema-builder": "2.*"
+    },
+    "authors": [
+        {
+            "name": "Marcel S. Henselin",
+            "email": "marcel@henselin.de"
+        }
+    ]
+}
