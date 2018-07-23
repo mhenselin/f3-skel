@@ -18,6 +18,9 @@ if (!file_exists('vendor/autoload.php')) {
 	/* */
 	
 	$f3->config('config/routes.ini');
+	foreach(glob("routes-enabled/*.ini") as $filename){
+		$f3->config($filename);
+	}
 	
 	$f3->run();
 }
