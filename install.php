@@ -127,7 +127,7 @@ if (defined('F3SKEL') && defined('INSTALL')){
 
 	//welcome.htm
 	$myFS->write( 'ui/de/welcome.htm', gzdecode(base64_decode("H4sIAAAAAAACCrPJMLQLz8zJyc7PzU3NU7TRB/IBRKLL0hQAAAA=")) );
-	$myFS->write( 'ui/en/welcome.htm', gzdecode(base64_decode("H4sIAAAAAAACCrPJMLQLz8zJyc7PzU3NU7TRB/IBRKLL0hQAAAA=")) );
+	$myFS->write( 'ui/en/welcome.htm', gzdecode(base64_decode("H4sIAAAAAAACCrPJMLQLT81Jzs9NVbTRB3J4uXi5bAqKUoGM6moFh5zEvHSF2lqgmD5IEABMGrq2LwAAAA==")) );
 	
 	//layout.htm
 	$myFS->write( 'ui/layout.htm', gzdecode(base64_decode("H4sIAAAAAAACCrPJzEvOKU1JVcgoSk2zVcpITUxJLdLLKMlVUtC347JBla2uVnAoy0wtV6itxSadlp9fgtAMAJ9m029aAAAA")) );
