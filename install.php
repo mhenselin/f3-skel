@@ -98,6 +98,8 @@ if (defined('F3SKEL') && defined('INSTALL')){
 		'config/routes-available',
 		'config/routes-enabled',
 		'ui',
+		'ui/de',
+		'ui/en',
 		'themes'
 	);
 	
@@ -123,7 +125,8 @@ if (defined('F3SKEL') && defined('INSTALL')){
 	$myFS->write( 'ui/footer.htm', gzdecode(base64_decode("H4sIAAAAAAACCjWOOw7CMBBEa0fKHSxXUIAvsFiUNKk4gWMviiV/kL0gcnv8Ubaa0dPsDGMgg3ZRzdM8MQavlAgzN16XchPDCcUbY2Dd9yAmRaqxBjtjUN46HpTwR5fwIbRCmYy6Cr7ufHk++CnobNDfN4wFvYvXiHQG2dLjE8ha0yXI0d+38Xog12T3akFuFHwVf8QEKfy/AAAA")) );
 
 	//welcome.htm
-	$myFS->write( 'ui/welcome.htm', gzdecode(base64_decode("H4sIAAAAAAACCrPJMLQLz8zJyc7PzU3NU7TRB/IBRKLL0hQAAAA=")) );
+	$myFS->write( 'ui/de/welcome.htm', gzdecode(base64_decode("H4sIAAAAAAACCrPJMLQLz8zJyc7PzU3NU7TRB/IBRKLL0hQAAAA=")) );
+	$myFS->write( 'ui/en/welcome.htm', gzdecode(base64_decode("H4sIAAAAAAACCrPJMLQLz8zJyc7PzU3NU7TRB/IBRKLL0hQAAAA=")) );
 	
 	//layout.htm
 	$myFS->write( 'ui/layout.htm', gzdecode(base64_decode("H4sIAAAAAAACCrPJzEvOKU1JVcgoSk2zVcpITUxJLdLLKMlVUtC347JBla2uVnAoy0wtV6itxSadlp9fgtAMAJ9m029aAAAA")) );
