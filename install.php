@@ -140,5 +140,5 @@ output('ALL done!');
 
 sleep(15);
 
-echo "<a href='#' onclick='window.location.reload(false);'>weiter ...</a>;
+echo "<a href='#' onclick='window.location.reload(false);'>weiter ...</a>";
 
