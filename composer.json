@@ -12,7 +12,8 @@
 	"ikkez/f3-fal": "*",
 	"ikkez/f3-sheet": "*", 
 	"ikkez/f3-cortex": "*", 
-	"ikkez/f3-schema-builder": "2.*"
+	"ikkez/f3-schema-builder": "2.*",
+	"xfra35/f3-multilang": "*"
     },
     "authors": [
         {
