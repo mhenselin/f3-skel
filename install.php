@@ -112,6 +112,7 @@ if (defined('F3SKEL') && defined('INSTALL')){
 	output('Generating standard config and routes ...');
 	$myFS->write( 'config/config.ini', "[globals]\nAUTOLOAD=app/controllers/|app/models/\nUI=ui/\ndb_dns=mysql:host=your_database_host_name;port=3306;dbname=" );
 	$myFS->write( 'config/routes.ini', "[routes]\nGET /=MainController->start" );
+	$myFS->write( 'config/conf-enabled/lang.ini', "[MULTILANG.languages]\nde = de-DE, de\nen = en-GB, en-US, en" );
 	
 	output('Creating MainController ...');
 	$myFS->write( 'app/controllers/Controller.php', gzdecode(base64_decode("H4sIAAAAAAACCm2SUUvDMBSFn5tfcRWhLTgnDHxo7US3PQhznbOCD0JJ21s76JKaZMgY/e/ezDqoLg95+M495yY3ub1rqoaxvOZaw0QKo2Rdo4I9Awa0GiUN5gYLuChH4V9UZKHDnAMttyI3aykgw1IqVHJr0PP3zHGGQ0jiafxT1tLer+elQdWVwx7IgHklIcFNU3ODQbAW2nCRkzwYKxQFKs+t+Y4cV5XZuH54TO4Hp2kuyaq2ubHJnWwXXSV64LqXTXej1usSPFIH4w80nltkaSG068NZBOebnf6sg0pqE1FvlRbc8IxCUotSwTcYNlKZaDS6vgmLzILo3PZ1HIcGFQn8gunD+8vz3LPIOdHmCnrQRrj+5f/qrUZ1UmjoFX8FrhTfefC+nMZBcJ8kq3S2Wj3F0xlE4452IJ29TWbL5DFegG+tNAvaD+c21VoPxnR6+9REWqw17nsSRLB4nc8PKjvYOomGfPwzLWvZN86KrKFrAgAA")) );
