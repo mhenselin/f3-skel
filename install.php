@@ -140,7 +140,5 @@ output('ALL done!');
 
 sleep(15);
 
-$f3=\F3::instance();
-	$f3->config('config/config.ini');
-	$f3->config('config/routes.ini');
-$f3->run();
+echo "<a href=''>weiter ...</a>;
+
